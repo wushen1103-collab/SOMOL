@@ -1,0 +1,20 @@
+name: somol
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - rdkit
+  - pandas
+  - pyarrow
+  - numpy
+  - scipy
+  - scikit-learn
+  - pytorch
+  - xgboost
+  - tqdm
+  - pyyaml
+  - joblib
+  - networkx
+  - requests
+  - pytest
+  - aria2

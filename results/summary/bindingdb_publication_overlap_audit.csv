@@ -1,0 +1,5 @@
+endpoint,chembl_unique_dois,bindingdb_numeric_rows,bindingdb_rows_with_doi,overlapping_bindingdb_rows,row_overlap_pct,bindingdb_unique_dois,overlapping_unique_dois,unique_doi_overlap_pct
+IC50,25525,63525,60312,23611,39.148097,1865,594,31.849866
+EC50,5267,4230,4084,1774,43.437806,181,66,36.464088
+KD,3315,2650,2496,136,5.448718,219,12,5.479452
+KI,10799,25790,24112,12402,51.434970,859,291,33.876601

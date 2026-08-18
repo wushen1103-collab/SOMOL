@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use SOMOL, please cite this software using the metadata below."
+title: "SOMOL: Sparse Overlap Measurement Operator Learning"
+type: software
+version: 1.0.0
+date-released: 2026-08-18
+license: MIT
+repository-code: "https://github.com/wushen1103-collab/SOMOL"
+authors:
+  - family-names: Xu
+    given-names: Xiaohan
+    affiliation: "Department of Radiology, The First Hospital of China Medical University, Shenyang, China"
+  - family-names: Zhang
+    given-names: Tianhao
+    affiliation: "Department of Radiology, The First Hospital of China Medical University, Shenyang, China"
+  - family-names: Xi
+    given-names: Man
+    affiliation: "Department of Radiology, The First Hospital of China Medical University, Shenyang, China"
+  - family-names: Zhao
+    given-names: Chenyu
+    affiliation: "Department of China Medical University--The Queen's University of Belfast Joint College, School of Pharmacy, China Medical University, Shenyang, China; School of Pharmacy, Queen's University Belfast, Belfast, UK; Department of Biochemistry, Yong Loo Lin School of Medicine, National University of Singapore"
+  - family-names: Gluchman
+    given-names: Martin
+    affiliation: "Department of China Medical University--The Queen's University of Belfast Joint College, School of Pharmacy, China Medical University, Shenyang, China; School of Pharmacy, Queen's University Belfast, Belfast, UK"
+  - family-names: Fan
+    given-names: Zhonghao
+    affiliation: "Department of China Medical University--The Queen's University of Belfast Joint College, School of Pharmacy, China Medical University, Shenyang, China; School of Pharmacy, Queen's University Belfast, Belfast, UK"
+  - family-names: Wang
+    given-names: Shuang
+    email: "wangshuang05180@163.com"
+    affiliation: "Department of Anesthesiology, The First Hospital of China Medical University, Shenyang, China"
+  - family-names: Zhang
+    given-names: Cong
+    email: "cmuzhangcong@163.com"
+    affiliation: "Department of Emergency, The First Hospital of China Medical University, Shenyang, China"
+  - family-names: Zhao
+    given-names: Hang
+    email: "zhaoh_cmu@163.com"
+    affiliation: "Department of Hyperbaric Oxygen, The First Hospital of China Medical University, Shenyang, China"

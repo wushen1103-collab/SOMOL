@@ -1,0 +1,5 @@
+dataset,endpoint,exact_measurement_system_rows,anchors_with_pairs,transport_pairs,assay_systems,targets
+BindingDB_Articles_202608,IC50,51726,3054,15442,1062,295
+BindingDB_Articles_202608,KI,20172,703,5114,390,135
+BindingDB_Articles_202608,KD,2054,114,262,54,27
+BindingDB_Articles_202608,EC50,3415,157,558,115,35

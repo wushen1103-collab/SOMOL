@@ -1,0 +1,54 @@
+method,route_group,route_description,source_type,numeric_result_source,requires_assay_metadata,requires_compound_features
+assay_context_knn_affine_k1,modern_assay_context,"assay-context KNN affine, k=1",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_knn_affine_k20,modern_assay_context,"assay-context KNN affine, k=20",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_knn_affine_k5,modern_assay_context,"assay-context KNN affine, k=5",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_knn_delta_k1,modern_assay_context,"assay-context KNN delta, k=1",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_knn_delta_k20,modern_assay_context,"assay-context KNN delta, k=20",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_knn_delta_k5,modern_assay_context,"assay-context KNN delta, k=5",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_pair_or_knn_k1,modern_assay_context,"direct pair else assay-context KNN, k=1",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_pair_or_knn_k20,modern_assay_context,"direct pair else assay-context KNN, k=20",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_pair_or_knn_k5,modern_assay_context,"direct pair else assay-context KNN, k=5",ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_pair_or_ridge,modern_assay_context,direct pair else assay-context ridge,ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_context_ridge_delta,modern_assay_context,assay-context ridge delta,ours_rerun_same_split_surrogate,rerun under SOMOL same split,True,False
+assay_mean,classic,destination assay mean,ours_rerun_same_split,rerun under SOMOL same split,False,False
+calibration_grid_global,direct_competitor,validation-selected global affine/shrinkage calibration,ours_rerun_same_split,rerun under SOMOL same split,False,False
+calibration_grid_selector,direct_competitor,support-aware shrinkage selector,ours_rerun_same_split,rerun under SOMOL same split,False,False
+calibration_grid_selector_macro_assay_pair,direct_competitor,support-aware shrinkage selector,ours_rerun_same_split,rerun under SOMOL same split,False,False
+calibration_grid_selector_macro_target,direct_competitor,support-aware shrinkage selector,ours_rerun_same_split,rerun under SOMOL same split,False,False
+calibration_grid_selector_micro,direct_competitor,support-aware shrinkage selector,ours_rerun_same_split,rerun under SOMOL same split,False,False
+deming_bias_fallback,method_comparison,Deming errors-in-variables method-comparison baseline,ours_rerun_same_split,rerun under SOMOL same split,False,False
+gauge_calibration_selector,ours,SOMOL shared assay-gauge selector,ours_main_same_split,rerun under SOMOL same split,False,False
+gauge_calibration_selector_macro_assay_pair,ours_ablation,"SOMOL gauge selector, macro-pair selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+gauge_calibration_selector_macro_target,ours_ablation,"SOMOL gauge selector, macro-target selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+gauge_calibration_selector_micro,ours,SOMOL shared assay-gauge selector,ours_main_same_split,rerun under SOMOL same split,False,False
+graph_gauge_calibration_selector,ours_ablation,SOMOL graph-degree gauge extension,ours_ablation_same_split,rerun under SOMOL same split,False,False
+graph_gauge_calibration_selector_macro_assay_pair,ours_ablation,SOMOL graph-degree gauge extension,ours_ablation_same_split,rerun under SOMOL same split,False,False
+graph_gauge_calibration_selector_macro_target,ours_ablation,SOMOL graph-degree gauge extension,ours_ablation_same_split,rerun under SOMOL same split,False,False
+graph_gauge_calibration_selector_micro,ours_ablation,SOMOL graph-degree gauge extension,ours_ablation_same_split,rerun under SOMOL same split,False,False
+identity,classic,identity transport,ours_rerun_same_split,rerun under SOMOL same split,False,False
+identity_bias,classic,global/pair bias calibration,ours_rerun_same_split,rerun under SOMOL same split,False,False
+missing_metadata_pair_or_global_delta,missing_modality,direct pair else global delta with assay metadata removed,ours_rerun_same_split,rerun under SOMOL same split,False,False
+odr_tls_bias_fallback,method_comparison,orthogonal-distance total least-squares method-comparison baseline,ours_rerun_same_split,rerun under SOMOL same split,False,False
+pair_affine,classic,local affine calibration,ours_rerun_same_split,rerun under SOMOL same split,False,False
+pair_affine_bias_fallback,classic,local affine with identity-bias fallback,ours_rerun_same_split,rerun under SOMOL same split,False,False
+pair_affine_shrink_k10,classic,fixed shrinkage calibration,ours_rerun_same_split,rerun under SOMOL same split,False,False
+pair_isotonic,classic,monotone isotonic calibration,ours_rerun_same_split,rerun under SOMOL same split,False,False
+robust_trimmed_bias_fallback,method_comparison,trimmed robust method-comparison baseline,ours_rerun_same_split,rerun under SOMOL same split,False,False
+somol_gauge_graph_blend,ours,SOMOL validation-tuned gauge/graph blend,ours_main_same_split,rerun under SOMOL same split,False,False
+somol_gauge_graph_blend_macro_assay_pair,ours_ablation,"SOMOL gauge/graph blend, macro-pair selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_gauge_graph_blend_macro_target,ours_ablation,"SOMOL gauge/graph blend, macro-target selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_gauge_graph_blend_micro,ours,SOMOL validation-tuned gauge/graph blend,ours_main_same_split,rerun under SOMOL same split,False,False
+somol_guarded_stack,ours,SOMOL validation-tolerant guarded stack,ours_main_same_split,rerun under SOMOL same split,False,False
+somol_guarded_stack_macro_assay_pair,ours_ablation,"SOMOL guarded stack, macro-pair selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_guarded_stack_macro_target,ours_ablation,"SOMOL guarded stack, macro-target selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_guarded_stack_micro,ours,SOMOL validation-tolerant guarded stack,ours_main_same_split,rerun under SOMOL same split,False,False
+somol_robust_blend_bucket,ours,SOMOL support-bucket convex blend of guarded stack and robust method-comparison baseline,ours_main_same_split,rerun under SOMOL same split,False,False
+somol_robust_blend_global,ours_ablation,SOMOL global convex blend of guarded stack and robust method-comparison baseline,ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_robust_selector_bucket,ours_ablation,SOMOL support-bucket selector over guarded stack and robust method-comparison baseline,ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_robust_selector_global,ours_ablation,SOMOL validation selector over guarded stack and robust method-comparison baseline,ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_stack,ours,SOMOL validation-tuned calibration/gauge/graph convex stack,ours_main_same_split,rerun under SOMOL same split,False,False
+somol_stack_macro_assay_pair,ours_ablation,"SOMOL convex stack, macro-pair selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_stack_macro_target,ours_ablation,"SOMOL convex stack, macro-target selected",ours_ablation_same_split,rerun under SOMOL same split,False,False
+somol_stack_micro,ours,SOMOL validation-tuned calibration/gauge/graph convex stack,ours_main_same_split,rerun under SOMOL same split,False,False
+support_gated_val_micro,support_shrinkage,validation support-bucket selector,ours_rerun_same_split,rerun under SOMOL same split,False,False
+target_pair_affine,classic,target-conditioned local affine,ours_rerun_same_split,rerun under SOMOL same split,False,False
