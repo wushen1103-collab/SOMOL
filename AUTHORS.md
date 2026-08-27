@@ -8,8 +8,8 @@ Authors are listed in the following order:
 4. Chenyu Zhao (Affiliations 2, 3, and 4)
 5. Martin Gluchman (Affiliations 2 and 3)
 6. Zhonghao Fan (Affiliations 2 and 3)
-7. Shuang Wang (Affiliation 5; corresponding author)
-8. Cong Zhang (Affiliation 6; corresponding author)
+7. Shuang Wang (Affiliation 5)
+8. Cong Zhang (Affiliation 6)
 9. Hang Zhao (Affiliation 7; corresponding author)
 
 ## Affiliations
@@ -30,8 +30,6 @@ Authors are listed in the following order:
 
 ## Correspondence
 
-- Shuang Wang: wangshuang05180@163.com
-- Cong Zhang: cmuzhangcong@163.com
 - Hang Zhao: zhaoh_cmu@163.com
 
 Xiaohan Xu, Tianhao Zhang, and Man Xi contributed equally to this work.
