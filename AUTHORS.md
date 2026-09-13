@@ -10,7 +10,7 @@ Authors are listed in the following order:
 6. Zhonghao Fan (Affiliations 2 and 3)
 7. Shuang Wang (Affiliation 5; corresponding author)
 8. Cong Zhang (Affiliation 6; corresponding author)
-9. Hang Zhao (Affiliation 7; corresponding author)
+9. Hang Zhao (Affiliation 7)
 
 ## Affiliations
 
@@ -32,6 +32,5 @@ Authors are listed in the following order:
 
 - Shuang Wang: wangshuang05180@163.com
 - Cong Zhang: cmuzhangcong@163.com
-- Hang Zhao: zhaoh_cmu@163.com
 
 Xiaohan Xu, Tianhao Zhang, and Man Xi contributed equally to this work.
