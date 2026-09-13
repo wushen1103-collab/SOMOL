@@ -66,7 +66,19 @@ def main() -> None:
         inference["endpoint"].eq("IC50") & inference["seed"].eq("seed_summary")
     ].iloc[0]
     assert_close("IC50 corrected p", float(ic50["corrected_p_greater"]), 0.0002710890414443175)
-    print("Verified final MAEs, exact no-gauge ablations, cycle errors, and corrected inference.")
+
+    grouped_key = pd.read_csv(SUMMARY / "compound_target_key_block_bootstrap_sensitivity.csv")
+    grouped_key_ic50 = grouped_key[grouped_key["endpoint"].eq("IC50")].iloc[0]
+    assert_close("IC50 grouped-key bootstrap delta", float(grouped_key_ic50["delta_mean"]), 0.0011341463084524116)
+    assert float(grouped_key_ic50["ci_low"]) > 0.0
+
+    node2vec_holm = pd.read_csv(SUMMARY / "node2vec_hybrid_four_endpoint_holm.csv").set_index("endpoint")
+    assert_close("IC50 node2vec Holm p", float(node2vec_holm.loc["IC50", "holm_adjusted_p"]), 0.0221168523067728)
+    assert (node2vec_holm.drop(index="IC50")["holm_adjusted_p"] > 0.05).all()
+    print(
+        "Verified final MAEs, exact no-gauge ablations, cycle errors, corrected "
+        "inference, grouped-key sensitivity, and node2vec multiplicity control."
+    )
 
 
 if __name__ == "__main__":

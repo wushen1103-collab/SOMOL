@@ -7,9 +7,10 @@ gauge transport, validation-only stacking, and support-bucket fusion.
 
 This compact release reproduces the core ChEMBL 37 experiments for IC50, KI,
 KD, and EC50 over grouped seeds 13, 17, 23, 29, and 31. It also includes the
-exact no-gauge ablation, full-operator cycle audit, corrected resampled test,
-hierarchical block bootstrap, and compact reference outputs used to verify the
-reported results.
+exact no-gauge ablation, full-operator cycle audit, corrected resampled tests,
+hierarchical block bootstrap (including a grouped compound-target-key
+sensitivity), and compact reference outputs used to verify the reported
+results.
 
 ## Repository contents
 
@@ -77,8 +78,10 @@ floating-point precision.
 ## Result verification
 
 The compact tables under `results/summary/` are sufficient to verify the main
-endpoint means, the exact no-gauge penalties, cycle-return errors, and corrected
-split-level inference without downloading row-level records:
+endpoint means, the exact no-gauge penalties, cycle-return errors, corrected
+split-level inference, grouped-key bootstrap sensitivity, and the separate
+four-endpoint Holm adjustment for the node2vec hybrid comparison without
+downloading row-level records:
 
 ```bash
 python scripts/verify_release_results.py

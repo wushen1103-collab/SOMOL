@@ -17,6 +17,7 @@ BLOCKS = {
     "assay_pair": ["assay_src", "assay_dst"],
     "target": ["target_chembl_id"],
     "assay_dst_node": ["assay_dst"],
+    "compound_target_key": ["compound_target_key"],
 }
 PRIMARY = "pred_somol_robust_blend_bucket"
 COMPARATOR = "pred_robust_trimmed_bias_fallback"
@@ -60,7 +61,10 @@ def main() -> None:
             )
             frame = pd.read_parquet(
                 path,
-                columns=["split", "target_chembl_id", "assay_src", "assay_dst", "y_dst", PRIMARY, COMPARATOR],
+                columns=[
+                    "split", "compound_target_key", "target_chembl_id", "assay_src",
+                    "assay_dst", "y_dst", PRIMARY, COMPARATOR,
+                ],
             )
             test = frame.loc[frame["split"].eq("test")].copy()
             test["delta"] = (test[COMPARATOR] - test["y_dst"]).abs() - (test[PRIMARY] - test["y_dst"]).abs()
